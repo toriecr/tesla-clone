@@ -31,7 +31,6 @@ const Item = ({ title, desc, descLink, backgroundImg, leftBtnTxt, leftBtnLink, r
           )} */}
         </div>
       </div>
-
     </div>
   )
 }

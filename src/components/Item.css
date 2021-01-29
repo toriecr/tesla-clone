@@ -6,6 +6,8 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  scroll-snap-align: start;
+  /* position: relative; */
 }
 
 .item__container {
@@ -19,25 +21,33 @@
   margin-top: 20%;
   display: flex;
   flex-direction: column;
-  font-size: 34px;
+  font-size: 40px;
   color: #393c41;
   align-items: center;
   flex: 1;
+  /* position: fixed; */
+  /* top: 20%; */
 }
 
 .item__title {
   font-weight: 600;
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 .item__textDesc {
   font-weight: 400;
   font-size: 14px;
+  text-align: center;
 }
 
 .item__lowerThird {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
+  /* position: fixed; */
+  /* bottom: 10%; */
+  
 }
 
 .item__buttons {
@@ -49,4 +59,10 @@
   width: 100%;
   margin-top: 3%;
   justify-content: center;
+}
+
+@media screen and (max-width: 540px) {
+  .item__buttons {
+    flex-flow: wrap;
+  }
 }
